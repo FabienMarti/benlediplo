@@ -1,0 +1,25 @@
+
+.bulleDeTexte{
+    background-image: url('bulle.png');
+    height: 206px;
+    width: 250px;
+    float: right;
+    margin-top: 200px;
+    margin-right : 75px;
+}
+.mainDiv{
+     border: 2px black solid;
+     background-image: url('diplo.png');
+     height: 485px;
+     width: 800px;
+}
+body{
+    background-image: url('forestBG.jpg'); 
+}
+#changeText{
+    margin: 85px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}

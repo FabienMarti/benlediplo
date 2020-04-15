@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>HELLO</title>
+        <link href="style.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+        <div class="mainDiv">
+            <div class="bulleDeTexte">
+                <p id="changeText">Salut ! C'est Ben le diplo tu me reconnais ?</p>
+            </div>
+
+        </div>
+    </body>
+
+
+    <script>
+        var text1 = "Laisse moi t'aider pendant ta navigation, en te parlant des cookies"
+        var text2 = "Ces délicieux cookies, tu peux les manger si tu veux"
+        var text3 = "Ces délicieux cookies me servent à te traquer, j'arrive ne bouge pas"
+        var text = [text1, text2, text3];
+        var counter = 0;
+        var elem = document.getElementById("changeText");
+        var inst = setInterval(change, 5000);
+
+        function change() {
+            elem.innerHTML = text[counter]; counter++; if (counter >= text.length) {
+                counter = 0;
+                clearInterval(inst);
+            }
+        };
+    </script>
+
+</html>
